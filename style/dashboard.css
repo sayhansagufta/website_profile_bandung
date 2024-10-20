@@ -1,0 +1,62 @@
+/* Mengatur desain header */
+header {
+  background: #038ade;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+/* mengatur lebar menu 20% dengan background hitam */
+aside {
+  flex: 20%;
+  background: #222;
+}
+
+/* mengatur lebar konten utama 80% dengan background putih */
+section.main {
+  flex: 80%;
+  background: #fff;
+  min-height: 530px;
+  padding: 15px 20px;
+}
+
+/* mengatur footer dengan background abu-abu dan teks di tengah */
+footer {
+  background: #ccc;
+  color: #5555;
+  padding: 20px;
+  text-align: center;
+}
+
+/* mengatur layout pada layar kecil (responsive) */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* navigasi */
+/* membuang padding pada tag <ul> */
+.menu {
+  padding: 0;
+}
+
+/* menambah border bawah tag <li> */
+.menu li {
+  border-bottom: 1px dotted #444;
+}
+
+/* mengatur desain menu yang dibuat dengan tag a */
+.menu a {
+  display: block;
+  flex: wrap;
+  text-decoration: none;
+  color: #fff;
+  list-style: none;
+  padding: 20px 20px;
+}
+
+/* mengganti background menu ketika ditunjuk mouse */
+.menu a:hover {
+  background: #000;
+}

@@ -1,0 +1,75 @@
+h2 + p {
+  color: blue; /* Hanya Paragraph 1 yang akan berwarna biru */
+}
+
+img + p {
+  color: goldenrod; /* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+}
+
+img ~ p {
+  color: green; /* Rule akan diterapkan pada semua elemen <p> yang susunannya terletak setelah elemen <img> */
+}
+
+div > p {
+  background-color: yellow; /* Rule akan diterapkan pada elemen paragraf yang merupakan child dari elemen div */
+}
+
+div p {
+  background-color: yellow;
+}
+
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+  color: red;
+}
+
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+  color: green;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+/*:hover: Menerapkan gaya saat kursor mouse berada di atas elemen.*/
+a:hover {
+  color: pink;
+}
+
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+a:active {
+  color: orange;
+}
+
+input:focus {
+  border: 2px solid yellow;
+}
+
+/*:active: Menerapkan gaya saat elemen sedang diaktifkan (ditekan).*/
+button:active {
+  background-color: green;
+}
+/*::before: Menambahkan konten sebelum konten elemen*/
+h2::before {
+  content: "Title: ";
+  font-weight: bold;
+}
+/*::after: Menambahkan konten setelah konten elemen.*/
+p::after {
+  content: " - End of Paragraph";
+}
+/*::first-line: Menerapkan gaya pada baris pertama dari elemen*/
+p::first-line {
+  font-weight: bold;
+}
+/*::first-letter: Menerapkan gaya pada huruf pertama dari elemen.*/
+p::first-letter {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+blockquote::before,
+blockquote::after {
+  content: '"';
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}

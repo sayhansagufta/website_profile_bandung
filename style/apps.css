@@ -1,0 +1,26 @@
+* {
+  background-color: blueviolet;
+}
+h1,
+h2,
+h3 {
+  color: crimson;
+  background-color: white;
+  font-size: medium;
+}
+
+li {
+  color: aquamarine;
+}
+
+span {
+  color: black;
+}
+
+#active {
+  color: crimson;
+}
+
+.mark {
+  background: aquamarine;
+}

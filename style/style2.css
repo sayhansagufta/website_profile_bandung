@@ -1,0 +1,124 @@
+h2 {
+  color: green;
+  text-decoration: underline;
+}
+
+span {
+  color: brown;
+}
+
+.red {
+  color: red;
+}
+
+.skyblue-bg {
+  background-color: skyblue;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.fancy {
+  font-weight: bold;
+  text-shadow: 4px 4px 3px #77f;
+}
+
+#special {
+  background-color: skyblue;
+}
+
+input[type="text"] {
+  border: 1px solid brown;
+}
+
+ul {
+  font-size: 18px;
+}
+
+/* <a> element yang menerapkan href attribute */
+a[href] {
+  color: blue;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan awalan '#' */
+a[href^="#"] {
+  background-color: gold;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks '#example' */
+a[href*="example"] {
+  background-color: silver;
+}
+
+/* <a> element yang menerapkan nilai pada href yang mengandung teks 'insensitive' tidak mementingkan huruf kapital */
+a[href*="insensitive" i] {
+  color: cyan;
+}
+
+/* <a> element yang menerapkan nilai pada href dengan akhiran '.org' */
+a[href$=".org"] {
+  color: red;
+}
+
+button[disabled] {
+  background-color: grey;
+  color: white;
+}
+
+input[type="email"] {
+  border: 2px solid blue;
+}
+
+div[class~="highlight"] {
+  background-color: yellow;
+}
+
+a[href^="https"] {
+  color: green;
+}
+
+img[src$=".jpg"] {
+  border: 2px solid red;
+}
+
+a[href*="example2"] {
+  font-weight: bold;
+}
+
+/* menargetkan seluruh elemen */
+* {
+  color: green;
+}
+
+/* menargetkan seluruh tipe elemen yang mengandung nilai 'en' pada atribut lang */
+*[lang^="en"] {
+  font-style: italic;
+}
+
+/* menargetkan seluruh tipe elemen yang memiliki nilai 'warning' */
+*.warning {
+  color: red;
+}
+
+/* menargetkan seluruh tipe elemen yang memiliki nilai content */
+*#content {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+h2 + p {
+  color: blue; /* Hanya paragraph 1 yang berwarna biru */
+}
+/* Rule akan diterapkan pada elemen paragraf yang berada tepat setelah elemen img */
+img + p {
+  color: brown;
+}
+/* Rule akan diterapkan pada semua elemen <p> yang susunannya terletak setelah elemen <img> */
+img ~ p {
+  color: brown;
+}
+
+/*:nth-child(n): Memilih elemen anak berdasarkan posisi mereka. Misalnya, memilih elemen genap.*/
+li:nth-child(even) {
+  background-color: lightblue;
+}
